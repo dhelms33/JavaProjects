@@ -1,0 +1,50 @@
+/*
+ * CS1050 - Computer Science I - Fall 2020
+ * Instructor: Thyago Mota
+ * Description: Prg02 - LetterDistribution
+ * Student(s) Name(s): Dereck Helms
+ */
+
+import javax.swing.*;
+import java.awt.event.*;
+import java.io.*;
+import java.util.*;
+
+public class LetterDistribution {
+
+    static final String LETTERS_IN_THE_ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+    static final char   FIRST_LETTER_CODE       = 'a';
+    static final String FILE_NAME               = "Constitution.txt";
+    static final int    FRAME_WIDTH             = 1024;
+    static final int    FRAME_HEIGHT            = 768;
+
+    public static void main(String[] args) throws FileNotFoundException {
+        char [] alphabet = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q','r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+        int [] letter_Frequencies = new int[26];
+        Scanner in = new Scanner(FileInputStream(FILE_NAME));
+        while (in.hasNext()) {
+            String line = in.nextLine();
+            line.toLowerCase();
+            String compare;
+            int count = 0;
+
+            for (int i = 0; i < FILE_NAME.length(); i++) {
+                char c = FILE_NAME.Char.At[i];
+                if (c.equals(alphabet[i])) {
+                    letter_Frequencies[i]++;
+                    count++;
+                }
+            }
+
+        }
+        in.close();
+        for (int j = 0; j < letter_Frequencies.length; j++) {
+            letter_Frequencies /= FILE_NAME.length();
+        }
+        /* I am not sure how to copy the code from BarChar.java, but I will give it my best go right now. */
+        PrintStream out = new PrintStream(FileOutputStream(BarChart.java));
+        System.out.println(out);
+
+
+
+    }

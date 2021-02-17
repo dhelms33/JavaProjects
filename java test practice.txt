@@ -1,0 +1,31 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+		String s = "Hello!";
+		char c = 'c';
+		int int1 = 5;
+		double d = 5.23892;
+		byte b = 89;
+		//short sh = 300000; 
+		long lo = 3000000000l;
+		float tf = 3.5f; 
+		boolean bo = true; 
+		//1 cannot start a var name, must begin with $, _, or letter, cannot use java keyword in var name
+		String thisIsCamelCase = "yes";
+		String literals = "A literal is something that does not change when java executes.";
+		double u = int1; //this is type casting
+		//integer division done with double a; a/ int1; || by putting a decimal after number i.e 5./3 
+		//cannot re-declare variables
+		System.out.println(String.format("This is how to use string format with %.3f", d));
+		
+		
+	}
+}
